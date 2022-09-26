@@ -409,6 +409,8 @@ let nth_most_rate = (array, nthRarestTerm) => {
 };
 
 nth_most_rate([1, 2, 3, 4, 5], 3);
+message = `the nth rarest item is ${nth_most_rate}`;
+console.log(message);
 
 
 
