@@ -394,11 +394,11 @@
 // var totalBadges = parseInt(HTMLBadges) + parseInt(CSSBadges);
 // alert('Wow! You have ' + totalBadges + 'badges!');
 
-let nth_most_rate = (array, nthRarestTerm) => {
-  return array.filter((n) => n == nthRarestTerm).length;
-};
+// let nth_most_rate = (array, nthRarestTerm) => {
+//   return array.filter((n) => n == nthRarestTerm).length;
+// };
 
-nth_most_rate([1, 2, 3, 4, 5], 3);
+// nth_most_rate([1, 2, 3, 4, 5], 3);
 
 const nth_most_rate = (list, n) => {
   const nth_Checker = {};
@@ -438,24 +438,24 @@ const nth_most_rate = (list, n) => {
   return message;
 };
 
-nth_most_rate([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], 2);
+console.log(nth_most_rate([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], 3));
 
-function nth_most_rate(list, n) {
-  var mf = 1;
-  var m = 0;
-  var item;
-  for (var i = 0; i < nth_most_rate.length; i++) {
-    for (var j = i; j < nth_most_rate.length; j++) {
-      if (nth_most_rate[i] == nth_most_rate[j]) m++;
-      if (mf < m) {
-        mf = m;
-        item = nth_most_rate[i];
-      }
-    }
-    m = 0;
-  }
-  return item;
-}
-nth_most_rate([1, 5, 2, 4, 3, 2, 1, 4, 5], 1);
+// function nth_most_rate(list, n) {
+//   var mf = 1;
+//   var m = 0;
+//   var item;
+//   for (var i = 0; i < nth_most_rate.length; i++) {
+//     for (var j = i; j < nth_most_rate.length; j++) {
+//       if (nth_most_rate[i] == nth_most_rate[j]) m++;
+//       if (mf < m) {
+//         mf = m;
+//         item = nth_most_rate[i];
+//       }
+//     }
+//     m = 0;
+//   }
+//   return item;
+// }
+// nth_most_rate([1, 5, 2, 4, 3, 2, 1, 4, 5], 1);
 
-console.log(item + " ( " + mf + " times ) ");
+// console.log(item + " ( " + mf + " times ) ");
