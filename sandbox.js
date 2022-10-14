@@ -11,13 +11,13 @@
 // //getting characters
 // console.log(fullName[2]);
 
-// //string length 
+// //string length
 // console.log(fullName.length);
 
 // //string methods
 // console.log(fullName.toUpperCase());
 // let result = fullName.toLowerCase();
-// console.log(result, fullName); 
+// console.log(result, fullName);
 // let index = email.indexOf('@');
 // console.log(index)
 
@@ -63,11 +63,10 @@
 // console.log(5 / 'hello');
 // console.log(5 * 'hello');
 
-// //Number concatenation 
+// //Number concatenation
 // let result = 'the blog has' +' '+ likes + 'likes';
 
 // console.log(result);
-
 
 // //template strings
 // const title = 'Best reads of 2019';
@@ -153,7 +152,6 @@
 // console.log(age !== 25);
 // console.log(age !== '25');
 
-
 //type conversion
 
 // let score = '100';
@@ -166,7 +164,6 @@
 // let result = String(50);
 // let result = Boolean(0);
 // let result = Boolean('');
-
 
 // console.log(result, typeof result);
 
@@ -200,7 +197,7 @@
 //     i++;
 // }
 
-//do while  
+//do while
 // let i = 3;
 // do {
 //     console.log('value of i is: ',i);
@@ -219,7 +216,7 @@
 //     console.log("that's a lot of ninjas");
 // }
 
-// logical operators -OR || and AND && 
+// logical operators -OR || and AND &&
 
 // const password = 'pas@11';
 
@@ -233,17 +230,14 @@
 
 // logical NOT (!)
 
-
 // let user = false;
 
 // if(!user){
 //     console.log("user must be logged in to continue");
 // }
 
-
 // console.log(!true);
 // console.log(!false);
-
 
 // //break and continue
 // const scores = [50, 25, 0, 30, 100, 20, 10];
@@ -256,7 +250,6 @@
 //         console.log('Congrats, your score is the top score');
 //     }
 // }
-
 
 // switch statement
 // const grade = 'P';
@@ -277,7 +270,7 @@
 //   case "E":
 //     console.log("you got an E");
 //     break;
-//     default: 
+//     default:
 //     console.log('not a valid grade');
 // }
 
@@ -347,7 +340,6 @@
 // const greeting = greet();
 // console.log(` ${greeting}`);
 
-
 // const bill = (products, tax) => {
 //     let total = 0;
 //     for (let i = 0; i < products.length; i++) {
@@ -356,10 +348,9 @@
 //     return total;
 // };
 
-// console.log(bill([10,15,30], 0.2)); 
+// console.log(bill([10,15,30], 0.2));
 
-
-// 
+//
 // var message = 'hello!';
 // alert(message);
 // message = 'Welcome to the worldwide Internet';
@@ -403,16 +394,11 @@
 // var totalBadges = parseInt(HTMLBadges) + parseInt(CSSBadges);
 // alert('Wow! You have ' + totalBadges + 'badges!');
 
-
 let nth_most_rate = (array, nthRarestTerm) => {
   return array.filter((n) => n == nthRarestTerm).length;
 };
 
 nth_most_rate([1, 2, 3, 4, 5], 3);
-message = `the nth rarest item is ${nth_most_rate}`;
-console.log(message);
-
-
 
 const nth_most_rate = (list, n) => {
   const nth_Checker = {};
@@ -453,3 +439,23 @@ const nth_most_rate = (list, n) => {
 };
 
 nth_most_rate([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], 2);
+
+function nth_most_rate(list, n) {
+  var mf = 1;
+  var m = 0;
+  var item;
+  for (var i = 0; i < nth_most_rate.length; i++) {
+    for (var j = i; j < nth_most_rate.length; j++) {
+      if (nth_most_rate[i] == nth_most_rate[j]) m++;
+      if (mf < m) {
+        mf = m;
+        item = nth_most_rate[i];
+      }
+    }
+    m = 0;
+  }
+  return item;
+}
+nth_most_rate([1, 5, 2, 4, 3, 2, 1, 4, 5], 1);
+
+console.log(item + " ( " + mf + " times ) ");
