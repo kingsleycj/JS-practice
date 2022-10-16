@@ -56,9 +56,23 @@ document.write('It took you ' + guessCount + ' tries to guess the number ' + ran
 */
 
 // For Loop
-
+/*
 var counter = 0;
 while (counter < 10) {
   document.write(counter);
     counter++;
 }
+*/
+// the above can be written alternatively using for loop
+/*
+for (var counter = 0; counter < 10; counter++) {
+  document.write(counter);
+}
+*/
+
+var html = '';
+
+for ( var i = 1; i <= 9; i++) {
+  html += '<div>' + i + '</div>' ;
+}
+document.write( html);
