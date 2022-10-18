@@ -16,10 +16,10 @@ function print(message) {
 
 for (var i = 0; i < questions.length; i++) {
     question = questions[i][0];
-    answer = questions[i][1];
+    // answer = questions[i][1];
     response = parseInt(prompt(question));
-    if (response === answer ) {
-        correctAnswers += 1;
+    if (response === questions[i][1]) {
+      correctAnswers += 1;
     }
 }
 
