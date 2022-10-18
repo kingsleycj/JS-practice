@@ -41,7 +41,6 @@ html += '<h2> You got these questions correct: </h2>';
 html += buildList(questionsCorrect);
 html += '<h2>You got these questions wrong: </h2>';
 html += buildList(questionsWrong);
-
 print(html);
 
 
