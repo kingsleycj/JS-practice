@@ -1,3 +1,5 @@
+/*
+
 var inStock = ['apples', 'eggs', 'milk', 'cookies', 'cheese', 'bread', 'lettuce', 'carrot', 'broccoli', 'pizza', 'potatoes', 'crackers', 'onion', 'tofu', 'frozen dinner', 'cucumber'];
 var search;
 
@@ -22,3 +24,5 @@ while (true) {
         }
     }
 }
+
+*/
