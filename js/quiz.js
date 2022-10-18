@@ -8,10 +8,22 @@ var question;
 var answer;
 var response;
 var html;
+var questionsCorrect = [];
+var questionsWrong = [];
+
 
 
 function print(message) {
     document.write(message);
+}
+
+function buildList(array) {
+    var listHTML = '<ol>';
+    for (var i = 0; i < array.length; i++) {
+    listHTML += "<li>" + array[i] + "</li>";
+    }
+    listHTML += "</ol>";
+    return listHTML;
 }
 
 for (var i = 0; i < questions.length; i++) {
@@ -20,8 +32,17 @@ for (var i = 0; i < questions.length; i++) {
     response = parseInt(prompt(question));
     if (response === answer ) {
         correctAnswers += 1;
+        questionsCorrect.push(question);
+    } else {
+        questionsWrong.pop(question);
     }
 }
 
 html = "You got " + correctAnswers + " question(s) right";
+html += '<h2> You got these questions correct: </h2>';
+html += buildList(correct);
+html += '<h2>You got these questions wrong: </h2>';
+html += buildList(wrong);
 print(html);
+
+
