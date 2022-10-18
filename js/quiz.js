@@ -18,7 +18,7 @@ for (var i = 0; i < questions.length; i++) {
     question = questions[i][0];
     answer = questions[i][1];
     response = parseInt(prompt(question));
-    if (response === questions[i][1] ) {
+    if (response === answer ) {
         correctAnswers += 1;
     }
 }
