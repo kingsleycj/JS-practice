@@ -11,11 +11,9 @@ var html;
 var questionsCorrect = [];
 var questionsWrong = [];
 
-
-
-function print(message) {
-    document.write(message);
-}
+// function print(message) {
+//     document.write(message);
+// }
 
 function buildList(array) {
     var listHTML = '<ol>';
@@ -34,7 +32,7 @@ for (var i = 0; i < questions.length; i++) {
         correctAnswers += 1;
         questionsCorrect.push(question);
     } else {
-        questionsWrong.pop(question);
+        questionsWrong.push(question);
     }
 }
 
