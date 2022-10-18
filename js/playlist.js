@@ -62,7 +62,11 @@ console.log(allStudents);
 */
 
 // searching for an item in an array
-
+/*
 var fruit = ['Apple', 'Orange', 'Grapefruit'];
 var position = fruit.indexOf('Grapefruit');
 console.log(position);
+
+*/
+
+// 
