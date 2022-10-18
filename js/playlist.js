@@ -16,6 +16,9 @@ console.log('first Item is ' + firstItem);
 console.log('last item is ' + lastItem);
 */
 
+// Using loops for arrays 
+
+/*
 var playList = [
     'I Did It My Way',
     'Respect',
@@ -32,6 +35,34 @@ function print(message){
 function printList(list){
     var listHTML = '<ol>';
     for (var i = 0; i < list.length; i++) {
-        
+        listHTML += '<li>' + list[i] + '</li>';
     }
+    listHTML += '</ol>';
+    print(listHTML);
 }
+printList(playList);
+*/
+
+// useful array methods
+
+// joining a symbol or character to an array in a variable
+/*
+var daysInWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+var daysString = daysInWeek.join(', ');
+console.log(daysString);
+*/
+
+// concatenating two variables in an array
+/*
+var currentStudents = ['Joan', 'John', 'Joaquin'];
+var newStudents = ['Samantha', 'Traci', 'Tiago'];
+var allStudents = currentStudents.concat(newStudents);
+
+console.log(allStudents);
+*/
+
+// searching for an item in an array
+
+var fruit = ['Apple', 'Orange', 'Grapefruit'];
+var position = fruit.indexOf('Grapefruit');
+console.log(position);
