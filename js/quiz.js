@@ -1,7 +1,7 @@
 var questions = [
     ['How many states are in the United States?', 50],
     ['How many continents are there?', 7],
-    ['How many letters of the alphabet do we have?', 27]
+    ['How many letters of the alphabet do we have?', 26]
 ];
 var correctAnswers = 0;
 var question;
