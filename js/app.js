@@ -74,3 +74,18 @@ console.log(mode([1,2,3,2,3,4,5,5], 5));
 // console.log(nthElementFinder([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
 
 
+// a program to display a name 50 times?
+// for (var i = 1; i <= 50; i++) 
+// {
+//    console.log("Kingsley Nweke");
+// }
+
+
+// function myName() {
+// //   var name = "Kingsley Nweke";
+//   for (var i = 1; i <= 50; i++) {
+//     return 'Kingsley Chijioke Nweke';
+//   }
+// }
+// console.log(myName());
+

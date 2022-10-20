@@ -106,3 +106,4 @@ document.write(
 }else{
   document.write("<h1>Sorry. You didn\'t guess the correct number</h1>");
 }
+

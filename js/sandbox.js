@@ -356,8 +356,8 @@
 // message = 'Welcome to the worldwide Internet';
 // alert(message);
 
-// var visitorName =( prompt('what is you name?');
-// console.log(visit)orName);
+// var visitorName = prompt('what is you name?');
+// console.log(visitorName);
 // var visitor = prompt('what is your name?');
 // var message = 'Hello ' + visitor + ' Welcome TO TREEHOUSE, we\'re glad you joined us.' + ' Please come back again for more information.';
 
