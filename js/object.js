@@ -23,11 +23,11 @@
 
 // print(message);
 
-var inputName = prompt('Enter your name: '); 
-var show = "Your name is " + inputName + "</br>";
+const inputName = prompt('Enter your name: '); 
+const show = "Your name is " + inputName + "</br>";
 
 // for (var i = 1; i <= 50; i++) {
-    var show = "<p>Your name is " + inputName + "</p>";
+    // var show = "<p>Your name is " + inputName + "</p>";
 //     document.write(show)
 // }
 
