@@ -1,4 +1,5 @@
 // // object literals are assigned with {}
+/*
 var person = {
     name : 'John',
     country : 'United States',
@@ -31,6 +32,8 @@ message += '<p> I have ' + person.skills.length + ' skills: ';
 message += person.skills.join(', ') + '</p>';
 print(message);
 
+*/
+
 
 // TxE Backend Assignment 1
 
@@ -58,3 +61,17 @@ function printName(i) {
 }
 printName(inputName);
 */
+
+// using 'for in ' to loop through an object list
+
+var person = {
+  name: "John",
+  country: "United States",
+  age: 35,
+  treehouseStudent: true,
+  skills: ["Javascript", "HTML", "CSS"],
+};
+
+for ( prop in person){
+  console.log(prop, ': ', person[prop]);
+}
