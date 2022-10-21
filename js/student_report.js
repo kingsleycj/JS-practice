@@ -7,7 +7,13 @@ function print(message) {
   outputDiv.innerHTML = message;
 }
 
-
+function getStudentReport ( student ) {
+    var report = "<h2>Student: " + student.Name + "</h2>";
+    report += "<p>Track: " + student.Track + "</p>";
+    report += "<p>Achievements: " + student.Achievements + "</p>";
+    report += "<p>Points: " + student.Points + "</p>";
+    return report;
+}
 
 while (true) {
   search = prompt(
@@ -19,16 +25,8 @@ while (true) {
     for (var i = 0; i < students.length; i++) {
       student = students[i];
       if ( student.name === search){
-
+        message = getStudentReport( student);
+        print(message);
       }
-      message += "<h2>Student: " + student.Name + "</h2>";
-      message += "<p>Track: " + student.Track + "</p>";
-      message += "<p>Achievements: " + student.Achievements + "</p>";
-      message += "<p>Points: " + student.Points + "</p>";
     }
 }
-
-
-
-
-print(message);
