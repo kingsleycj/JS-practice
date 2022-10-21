@@ -1,5 +1,30 @@
-var questions = [
-  { question: "How many states are in the United States?", answer: 50 },
-  { question: "How many continents are there?", answer: 7 },
-  { question: "How many letters of the alphabet do we have?", answer: 26 },
+var students = [
+    { 
+        Name: 'Kingsley CJ', Track: 'Backend Development', Achievements: 300, Points: 1265 
+    }, 
+    { 
+        Name: 'Michael', Track: 'Frontend Development', Achievements: 270, Points: 1163 
+    }, 
+    { 
+        Name: 'David Nweze' , Track: 'Ui/Ux Design' , Achievements: 350, Points: 1470 
+    }, 
+    { 
+        Name: 'Favour', Track: 'Frontend Development', Achievements: 250, Points: 1160 
+    }, 
+    { 
+        Name: 'Ghydion' , Track: 'Full-Stack Development' , Achievements: 500 , Points: 1790 
+    },
 ];
+var html;
+
+function print(message){
+    document.write(message)
+}
+
+    html = "These are the list of 5 students and their records:";
+
+for (prop in students){
+    html += ( students[prop]);
+}
+
+print(html)
