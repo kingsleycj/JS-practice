@@ -15,16 +15,12 @@ var students = [
         Name: 'Ghydion' , Track: 'Full-Stack Development' , Achievements: 500 , Points: 1790 
     },
 ];
-var html;
+// var html;
 
-function print(message){
-    document.write(message)
-}
+//     html = "These are the list of 5 students and their records:";
 
-    html = "These are the list of 5 students and their records:";
+// for (prop in students){
+//     html += ( students[prop]);
+// }
 
-for (prop in students){
-    html += ( students[prop]);
-}
-
-print(html)
+// print(html)
