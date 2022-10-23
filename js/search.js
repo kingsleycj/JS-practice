@@ -26,3 +26,14 @@ while (true) {
 }
 
 */
+
+// using arrow functions to sum and find the product of two arrays
+const X = [1,2,3,4,5];      // array 1
+const Y = [6,7,8,9,10];     // array 2
+
+const sumOfXY = X.map((value, index) => value + Y [index]);
+const productOfXY = X.map((value, index) => value * Y[index]);
+
+
+console.log('sum of X and Y is: ' + sumOfXY);
+console.log('product of X and Y is: ' + productOfXY);
