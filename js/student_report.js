@@ -25,7 +25,7 @@ while (true) {
       if ( student.Name === search){
         message = getStudentReport( student);
         print(message);
-      } else if ( student.Name !== search ){
+       } // else if ( student.Name !== search ){
         // print('User data not available for this student');
       }
     }
