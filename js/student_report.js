@@ -16,7 +16,7 @@ function getStudentReport (student) {
 }
 
 while (true) {
-  search = prompt('Search student records: type a name [Kingsley] (or type "quit" to end the search');
+  search = prompt('Search student records: type a name [Kingsley] (or type "quit" to end the search)');
   if (search === null || search.toLowerCase() === "quit") {
     break;
     }
