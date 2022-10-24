@@ -27,6 +27,7 @@ while (true) {
 
 */
 
+/*
 // using arrow functions to sum and find the product of two arrays
 const X = [1,2,3,4,5];      // array 1
 const Y = [6,7,8,9,10];     // array 2
@@ -37,3 +38,13 @@ const productOfXY = X.map((value, index) => value * Y[index]);
 
 console.log('sum of X and Y is: ' + sumOfXY);
 console.log('product of X and Y is: ' + productOfXY);
+*/
+
+const x = [1, 2, 3, 4, 5];
+const y = [6, 7, 8, 9, 10];
+
+sumOfXY = [x[0] + y[0], x[1] + y[1], x[2] + y[2], x[3] + y[3], x[4] + y[4]];
+productOfXY = [x[0] * y[0], x[1] * y[1], x[2] * y[2], x[3] * y[3], x[4] * y[4]];
+
+console.log(sumOfXY);
+console.log(productOfXY);
