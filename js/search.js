@@ -59,8 +59,8 @@ console.log(productOfXY);
 
 
 
- var X = [1, 2, 3, 4, 5];
- var Y = [6, 7, 8, 9, 10];
+var X = [1, 2, 3, 4, 5];
+var Y = [6, 7, 8, 9, 10];
 var sum = 0;
 var sumOfXY = [];
 var productOfXY = [];
