@@ -64,6 +64,7 @@ var Y = [6, 7, 8, 9, 10];
 var sum = 0;
 var sumOfXY = [];
 var productOfXY = [];
+
 for (var i = 0; i < X.length; i++) {
   sum = X[i] + Y[i];
   product = X[i] * Y[i];
