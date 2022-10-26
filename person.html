@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>person</h1>
+    <script>
+        const person = {
+            first_name : "Mike",
+            role: 'Teacher'
+        }
+
+        function personDescription(person) {
+            let description = person.first_name;
+            if (person.role) {
+                description += " is a ";
+                description += person.role;
+            }
+            console.log(description);
+        }
+        personDescription(person);
+    </script>
+</body>
+</html>
