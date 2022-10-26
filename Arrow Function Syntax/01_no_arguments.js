@@ -7,6 +7,4 @@ const sayName = () => {
 
 sayName();
 
-const sayBye = () => {
-    console.log("Bye" + name);
-}
+const sayBye = () => console.log("Bye" + name);
