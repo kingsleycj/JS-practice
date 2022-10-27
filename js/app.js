@@ -91,7 +91,8 @@ console.log(mode([1,2,3,2,3,4,5,5], 5));
 // }
 // console.log(myName());
 
-const myHeading = document.getElementById('myHeading');
+/*
+const myHeading = document.getElementsByTagName('h1')[0];
 const myButton = document.getElementById('myButton');
 const myTextInput = document.getElementById('myTextInput');
 const myTextInput2 = document.getElementById("myTextInput2");
@@ -114,10 +115,18 @@ myReset.addEventListener('click', () => {
 });
 
 myReset2.addEventListener("click", () => {
-    myBody.style.backgroundColor = 'pink';
+    myBody.style.backgroundColor = 'white' ;
 });
 
 changeFont.addEventListener('click', () => {
     myHeading.style.fontFamily = style1.value;
 });
+*/
+
+const myList = document.getElementsByTagName('li');
+
+for (let i = 0; i < myList.length; i++) {
+    myList[i].style.color = 'purple';
+}
+
 
