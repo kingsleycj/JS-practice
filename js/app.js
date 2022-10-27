@@ -95,6 +95,9 @@ const myHeading = document.getElementById('myHeading');
 const myButton = document.getElementById('myButton');
 const myTextInput = document.getElementById('myTextInput');
 const myBody = document.getElementById('myBody');
+const myReset = document.getElementById('myReset');
+const myReset2 = document.getElementById("myReset2");
+
 
 myButton.addEventListener('click', () => {
     myHeading.style.color = myTextInput.value;
@@ -102,4 +105,12 @@ myButton.addEventListener('click', () => {
 
 myBody.addEventListener('click', () => {
     myBody.style.backgroundColor = myTextInput2.value;
+});
+
+myReset.addEventListener('click', () => {
+    myHeading.style.color = 'black';
+});
+
+myReset2.addEventListener("click", () => {
+    myBody.style.backgroundColor = 'pink';
 });
