@@ -92,7 +92,14 @@ console.log(mode([1,2,3,2,3,4,5,5], 5));
 // console.log(myName());
 
 const myHeading = document.getElementById('myHeading');
+const myButton = document.getElementById('myButton');
+const myTextInput = document.getElementById('myTextInput');
+const myBody = document.getElementById('myBody');
 
-myHeading.addEventListener('click', () => {
-    myHeading.style.color = 'red';
+myButton.addEventListener('click', () => {
+    myHeading.style.color = myTextInput.value;
+});
+
+myBody.addEventListener('click', () => {
+    myBody.style.backgroundColor = myTextInput2.value;
 });
