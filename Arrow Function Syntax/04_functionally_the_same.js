@@ -17,3 +17,4 @@ const divide3 = (a,b) => {
 
 // concise arrow function expression
 const divide4 = (a,b) => a / b;
+

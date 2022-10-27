@@ -87,7 +87,6 @@ for (var i = 0; i < questions.length; i++) {
 
     }else {
         questionsWrong.push(question);
-
     }
 }
 
