@@ -129,4 +129,8 @@ for (let i = 0; i < myList.length; i++) {
     myList[i].style.color = 'purple';
 }
 
+const myList1 = document.getElementsByClassName("error-not-purple");
 
+for (let i = 0; i < myList1.length; i++) {
+  myList1[i].style.color = "red";
+}
