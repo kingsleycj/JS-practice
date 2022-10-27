@@ -37,6 +37,7 @@ document.write(message);
 
 
 // find nth rarest term in an array using nodejs?
+/*
 function mode(array, n)
 {
     if(array.length == 0)
@@ -59,6 +60,7 @@ function mode(array, n)
     return maxEl;
 }
 console.log(mode([1,2,3,2,3,4,5,5], 5));
+*/
 
 //  Create a function that returns the nth-rarest term  in an array in nodejs?
 // function nthElementFinder(a, n) {
@@ -89,3 +91,8 @@ console.log(mode([1,2,3,2,3,4,5,5], 5));
 // }
 // console.log(myName());
 
+const myHeading = document.getElementById('myHeading');
+
+myHeading.addEventListener('click', () => {
+    myHeading.style.color = 'red';
+});
