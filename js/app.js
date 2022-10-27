@@ -94,10 +94,12 @@ console.log(mode([1,2,3,2,3,4,5,5], 5));
 const myHeading = document.getElementById('myHeading');
 const myButton = document.getElementById('myButton');
 const myTextInput = document.getElementById('myTextInput');
+const myTextInput2 = document.getElementById("myTextInput2");
 const myBody = document.getElementById('myBody');
 const myReset = document.getElementById('myReset');
 const myReset2 = document.getElementById("myReset2");
-
+const style1 = document.getElementById('style1');
+const changeFont = document.getElementById('changeFont');
 
 myButton.addEventListener('click', () => {
     myHeading.style.color = myTextInput.value;
@@ -114,3 +116,8 @@ myReset.addEventListener('click', () => {
 myReset2.addEventListener("click", () => {
     myBody.style.backgroundColor = 'pink';
 });
+
+changeFont.addEventListener('click', () => {
+    myHeading.style.fontFamily = style1.value;
+});
+
