@@ -9,7 +9,7 @@ document.write(message);
 
 */
 
-// function getArea(width, height, unit) { 
+// function getArea(width, height, unit) {
 //     var area = height * width ;
 //     return area + " " + unit;
 // }
@@ -34,7 +34,6 @@ document.write(message);
 // nth_most_rate([1, 5, 2, 4, 3, 2, 1, 4, 5], 1);
 
 // console.log(item + " ( " + mf + " times ) ");
-
 
 // find nth rarest term in an array using nodejs?
 /*
@@ -75,13 +74,11 @@ console.log(mode([1,2,3,2,3,4,5,5], 5));
 
 // console.log(nthElementFinder([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
 
-
 // a program to display a name 50 times?
-// for (var i = 1; i <= 50; i++) 
+// for (var i = 1; i <= 50; i++)
 // {
 //    console.log("Kingsley Nweke");
 // }
-
 
 // function myName() {
 // //   var name = "Kingsley Nweke";
@@ -123,20 +120,58 @@ changeFont.addEventListener('click', () => {
 });
 */
 
-const myList = document.getElementsByTagName('li');
+// getting a handle on the DOM
 
+/*
+const myList = document.getElementsByTagName('li');
 for (let i = 0; i < myList.length; i++) {
     myList[i].style.color = 'purple';
 }
 
 const myList1 = document.querySelectorAll(".error-not-purple");
-
 for (let i = 0; i < myList1.length; i++) {
   myList1[i].style.color = "red";
 }
 
 const evens = document.querySelectorAll("li:nth-child(odd)");
-
 for (let i = 0; i < evens.length; i++) {
   evens[i].style.backgroundColor = "lightgray";
 }
+*/
+const toggleList = document.getElementById("toggleList");
+const listDiv = document.querySelector(".list");
+const descriptionInput = document.querySelector("input.description");
+const descriptionP = document.querySelector("p.description");
+const descriptionButton = document.querySelector("button.description");
+const addItemInput = document.querySelector("input.addItemInput");
+const addItemButton = document.querySelector("button.addItemButton");
+const removeItemButton = document.querySelector("button.removeItemButton");
+
+toggleList.addEventListener("click", () => {
+    if (listDiv.style.display == "none") {
+        toggleList.textContent = "Hide list";
+        listDiv.style.display = "block";
+    } else {
+        toggleList.textContent = "Show list";
+        listDiv.style.display = "none";
+    }
+});
+
+descriptionButton.addEventListener("click", () => {
+  descriptionP.innerHTML = descriptionInput.value + ":";
+  descriptionInput.value = "";
+});
+
+addItemButton.addEventListener('click', () => {
+    let ul = document.getElementsByTagName('ul')[0];
+    let li = document.createElement('li');
+    li.textContent = addItemInput.value;
+    ul.appendChild(li);
+    addItemInput.value = "";
+});
+
+removeItemButton.addEventListener('click', () => {
+        let ul = document.getElementsByTagName("ul")[0];
+        let li = document.querySelector("li:last-child");
+        ul.removeChild(li);
+});

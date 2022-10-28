@@ -439,7 +439,7 @@ const nth_most_rate = (list, n) => {
 };
 
 console.log(nth_most_rate([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], 3));
-
+//
 // function nth_most_rate(list, n) {
 //   var mf = 1;
 //   var m = 0;
@@ -457,5 +457,5 @@ console.log(nth_most_rate([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], 3));
 //   return item;
 // }
 // nth_most_rate([1, 5, 2, 4, 3, 2, 1, 4, 5], 1);
-
+//
 // console.log(item + " ( " + mf + " times ) ");
