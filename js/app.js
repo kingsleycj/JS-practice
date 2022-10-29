@@ -146,6 +146,12 @@ const descriptionButton = document.querySelector("button.description");
 const addItemInput = document.querySelector("input.addItemInput");
 const addItemButton = document.querySelector("button.addItemButton");
 const removeItemButton = document.querySelector("button.removeItemButton");
+const listItems = document.getElementsByTagName('li')[0];
+
+
+listItems.addEventListener("click", () => {
+
+});
 
 toggleList.addEventListener("click", () => {
     if (listDiv.style.display == "none") {
