@@ -146,6 +146,10 @@ const descriptionButton = document.querySelector("button.description");
 const addItemInput = document.querySelector("input.addItemInput");
 const addItemButton = document.querySelector("button.addItemButton");
 const removeItemButton = document.querySelector("button.removeItemButton");
+
+
+// utilizing event bubbling for better efficient event targeting
+/*
 const listItems = document.getElementsByTagName('li');
 
 for (let i = 0; i < listItems.length; i++) {
@@ -157,6 +161,24 @@ for (let i = 0; i < listItems.length; i++) {
     listItems[i].textContent = listItems[i].textContent.toLowerCase();
     });
 }
+*/
+
+listDiv.addEventListener("mouseover", (event) => {
+    if (event.target.tagName == 'LI') {
+        event.target.textContent = event.target.textContent.toUpperCase();
+    }
+});
+
+listDiv.addEventListener("mouseout", (event) => {
+    if (event.target.tagName == "LI") {
+      event.target.textContent = event.target.textContent.toLowerCase();
+    }
+});
+
+// targeting the events and returning them to the console
+// document.addEventListener('click', (event) => {
+//     console.log(event.target)
+// });
 
 toggleList.addEventListener("click", () => {
     if (listDiv.style.display == "none") {

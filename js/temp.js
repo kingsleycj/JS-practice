@@ -19,9 +19,3 @@ exec((something) => {
 //   console.log(something);
 // }, 3000, "Greetings, Guys!");
 
-const code = js => {
-  if (battery == 'dead'){
-    console.log('baba u done try');
-  };
-};
-code('dead');
