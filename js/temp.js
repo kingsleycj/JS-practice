@@ -15,7 +15,13 @@ exec((something) => {
 
 // delaying execution with setTimeout()
 
-window.setTimeout((something) => {
-  console.log(something);
-}, 3000, "Greetings, Guys!");
+// window.setTimeout((something) => {
+//   console.log(something);
+// }, 3000, "Greetings, Guys!");
 
+const code = js => {
+  if (battery == 'dead'){
+    console.log('baba u done try');
+  };
+};
+code('dead');
