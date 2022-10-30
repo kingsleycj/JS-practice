@@ -165,15 +165,17 @@ for (let i = 0; i < listItems.length; i++) {
 
 listDiv.addEventListener("mouseover", (event) => {
     if (event.target.tagName == 'LI') {
-        event.target.textContent = event.target.textContent.toUpperCase();
+        // event.target.textContent = event.target.textContent.toUpperCase();
+        
     }
 });
 
-listDiv.addEventListener("mouseout", (event) => {
-    if (event.target.tagName == "LI") {
-      event.target.textContent = event.target.textContent.toLowerCase();
-    }
-});
+// removed because traversing the node eliminates the need for the lines of code below
+// listDiv.addEventListener("mouseout", (event) => {
+//     if (event.target.tagName == "LI") {
+//       event.target.textContent = event.target.textContent.toLowerCase();
+//     }
+// });
 
 // targeting the events and returning them to the console
 // document.addEventListener('click', (event) => {
