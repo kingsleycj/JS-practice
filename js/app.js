@@ -143,9 +143,10 @@ const listDiv = document.querySelector(".list");
 const descriptionInput = document.querySelector("input.description");
 const descriptionP = document.querySelector("p.description");
 const descriptionButton = document.querySelector("button.description");
+const listUl = document.querySelector('ul')
 const addItemInput = document.querySelector("input.addItemInput");
 const addItemButton = document.querySelector("button.addItemButton");
-const removeItemButton = document.querySelector("button.removeItemButton");
+// const removeItemButton = document.querySelector("button.removeItemButton"); //REMOVING REMOVE BUTTON QUERY SELECTOR
 
 
 // utilizing event bubbling for better efficient event targeting
@@ -163,7 +164,7 @@ for (let i = 0; i < listItems.length; i++) {
 }
 */
 
-listDiv.addEventListener("click", (event) => {
+listUl.addEventListener("click", (event) => {
     if (event.target.tagName == 'BUTTON') {
         // event.target.textContent = event.target.textContent.toUpperCase();
         let li = event.target.parentNode;
@@ -201,14 +202,16 @@ descriptionButton.addEventListener("click", () => {
 
 addItemButton.addEventListener('click', () => {
     let ul = document.getElementsByTagName('ul')[0];
-    let li = document.createElement('li');
+    let li = document.createElement('li','button');
     li.textContent = addItemInput.value;
     ul.appendChild(li);
     addItemInput.value = "";
 });
 
-removeItemButton.addEventListener('click', () => {
-        let ul = document.getElementsByTagName("ul")[0];
-        let li = document.querySelector("li:last-child");
-        ul.removeChild(li);
-});
+
+// REMOVING REMOVE BUTTON HANDLER BECAUSE THE CODE HAS BEEN MODIFIED
+// removeItemButton.addEventListener('click', () => {
+//         let ul = document.getElementsByTagName("ul")[0];
+//         let li = document.querySelector("li:last-child");
+//         ul.removeChild(li);
+// });
