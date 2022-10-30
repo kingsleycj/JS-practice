@@ -163,10 +163,12 @@ for (let i = 0; i < listItems.length; i++) {
 }
 */
 
-listDiv.addEventListener("mouseover", (event) => {
-    if (event.target.tagName == 'LI') {
+listDiv.addEventListener("click", (event) => {
+    if (event.target.tagName == 'BUTTON') {
         // event.target.textContent = event.target.textContent.toUpperCase();
-        
+        let li = event.target.parentNode;
+        let ul = li.parentNode;
+        ul.removeChild(li);
     }
 });
 
