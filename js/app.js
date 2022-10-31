@@ -164,6 +164,18 @@ for (let i = 0; i < listItems.length; i++) {
 }
 */
 
+function attachListItemButtons () {
+    let up = document.createElement('button');
+    up.className = 'up';
+    up.textContent = 'Up';
+    let down = document.createElement('button');
+    down.className = 'down';
+    down.textContent = 'Down';
+    let remove = document.createElement('button');
+    remove.className = 'remove';
+    remove.textContent = 'Remove';
+}
+
 listUl.addEventListener("click", (event) => {
     if (event.target.tagName == 'BUTTON') {
         // event.target.textContent = event.target.textContent.toUpperCase();
