@@ -164,6 +164,7 @@ for (let i = 0; i < listItems.length; i++) {
 }
 */
 
+//  creating the listItemButtons for interactivity
 function attachListItemButtons (li) {
     let up = document.createElement('button');
     up.className = 'up';
@@ -179,10 +180,12 @@ function attachListItemButtons (li) {
     li.appendChild(remove);
 }
 
+//  looping through the list items to append listItemButtons
 for (let i = 0; i < lis.length; i++) {
     attachListItemButtons(lis[i]);
 }
 
+// adding event listener to recognise actions on the DOM
 listUl.addEventListener("click", (event) => {
     if (event.target.tagName == 'BUTTON') {
         // event.target.textContent = event.target.textContent.toUpperCase();
@@ -204,7 +207,7 @@ listUl.addEventListener("click", (event) => {
             let nextLi = li.nextElementSibling;
             let ul = li.parentNode;
             if (nextLi) {
-                ul.insertBefore(nextLi, li);
+                ul.insertBefore(nextLi, li); // to insertAfter (for next sibling), inverse the parameters
             }
         }
     }
