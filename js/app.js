@@ -148,6 +148,8 @@ const addItemInput = document.querySelector("input.addItemInput");
 const addItemButton = document.querySelector("button.addItemButton");
 // const removeItemButton = document.querySelector("button.removeItemButton"); //REMOVING REMOVE BUTTON QUERY SELECTOR
 const lis = listUl.children;
+const firstListItem = listUl.firstElementChild;
+const lastListItem = listUl.lastElementChild;
 
 // utilizing event bubbling for better efficient event targeting
 /*
@@ -164,21 +166,29 @@ for (let i = 0; i < listItems.length; i++) {
 }
 */
 
+firstListItem.style.backgroundColor = 'lightsteelblue';
+lastListItem.style.backgroundColor = 'lightblue';
+
 //  creating the listItemButtons for interactivity
 function attachListItemButtons (li) {
     let up = document.createElement('button');
     up.className = 'up';
     up.textContent = 'Up';
     li.appendChild(up);
+    up.removeChild(up.firstElementChild);
+    // let firstUp = document.getElementsByClassName('up');
+    // firstUp.removeChild(firstUp.firstElementChild);
     let down = document.createElement('button');
     down.className = 'down';
     down.textContent = 'Down';
     li.appendChild(down);
+    // down.removeChild(down.lastElementChild);
     let remove = document.createElement('button');
     remove.className = 'remove';
     remove.textContent = 'Remove';
     li.appendChild(remove);
 }
+
 
 //  looping through the list items to append listItemButtons
 for (let i = 0; i < lis.length; i++) {
