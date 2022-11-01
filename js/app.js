@@ -175,14 +175,16 @@ function attachListItemButtons (li) {
     up.className = 'up';
     up.textContent = 'Up';
     li.appendChild(up);
-    up.removeChild(up.firstElementChild);
+    let firstUp = document.getElementsByClassName('up')
+    firstUp.removeChild(firstUp.firstElementChild);
     // let firstUp = document.getElementsByClassName('up');
     // firstUp.removeChild(firstUp.firstElementChild);
     let down = document.createElement('button');
     down.className = 'down';
     down.textContent = 'Down';
     li.appendChild(down);
-    // down.removeChild(down.lastElementChild);
+    let firstDown = document.getElementsByClassName('down')
+    firstDown.removeChild(firstDown.lastElementChild);
     let remove = document.createElement('button');
     remove.className = 'remove';
     remove.textContent = 'Remove';
