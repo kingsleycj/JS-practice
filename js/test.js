@@ -14,7 +14,7 @@ let userInput = "";
 search.question("What Brand and Model of Phone would you like to buy from us?. Type \"quit\" to quit or \"list\" to list all available devices\n", function (string) {
     userInput = string;
 
-    console.log("Your name is " + userInput);
+    console.log(`You've added ${userInput} to your cart`);
 
     // close input stream
     search.close();

@@ -8,6 +8,7 @@ function print(message) {
 }
 
 while (true) {
+    const prompt = require("prompt-sync");
     search = prompt( "Search for a product in our store. Type 'list' to show a list of products available and 'quit' to exit." );
     search = search.toLowerCase();
     if ( search === 'quit') {
