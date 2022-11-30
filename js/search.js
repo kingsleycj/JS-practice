@@ -1,14 +1,14 @@
-/*
 
-var inStock = ['apples', 'eggs', 'milk', 'cookies', 'cheese', 'bread', 'lettuce', 'carrot', 'broccoli', 'pizza', 'potatoes', 'crackers', 'onion', 'tofu', 'frozen dinner', 'cucumber'];
-var search;
+
+let inStock = ['apples', 'eggs', 'milk', 'cookies', 'cheese', 'bread', 'lettuce', 'carrot', 'broccoli', 'pizza', 'potatoes', 'crackers', 'onion', 'tofu', 'frozen dinner', 'cucumber'];
+let search;
 
 function print(message) {
-    document.write( '<p>' + message + '</p>' );
+    console.log( '<p>' + message + '</p>' );
 }
 
 while (true) {
-    search = prompt("Search for a product in our store. Type 'list' to show a list of products available and 'quit' to exit." );
+    search = prompt( "Search for a product in our store. Type 'list' to show a list of products available and 'quit' to exit." );
     search = search.toLowerCase();
     if ( search === 'quit') {
         break;
@@ -16,16 +16,16 @@ while (true) {
         print( inStock.join( ', ' ) );
     } else {
         if ( inStock.indexOf(search) > -1 ) {
-            print('Yes, we have ' + search + ' in the store.' );
+            print( 'Yes, we have ' + search + ' in the store.' );
             
         } else {
-            print( search + ' is not in stock.');
+            print( search + ' is not in stock.' );
             
         }
     }
 }
 
-*/
+
 
 /*
 // using arrow functions to sum and find the product of two arrays
@@ -59,18 +59,18 @@ console.log(productOfXY);
 
 
 
-var X = [1, 2, 3, 4, 5];
-var Y = [6, 7, 8, 9, 10];
-var sum = 0;
-var sumOfXY = [];
-var productOfXY = [];
+// var X = [1, 2, 3, 4, 5];
+// var Y = [6, 7, 8, 9, 10];
+// var sum = 0;
+// var sumOfXY = [];
+// var productOfXY = [];
 
-for (var i = 0; i < X.length; i++) {
-  sum = X[i] + Y[i];
-  product = X[i] * Y[i];
-  sumOfXY.push(sum);
-  productOfXY.push(product);
-}
+// for (var i = 0; i < X.length; i++) {
+//   sum = X[i] + Y[i];
+//   product = X[i] * Y[i];
+//   sumOfXY.push(sum);
+//   productOfXY.push(product);
+// }
 
-console.log(sumOfXY)
-console.log(productOfXY)
+// console.log(sumOfXY)
+// console.log(productOfXY)

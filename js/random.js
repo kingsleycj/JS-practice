@@ -43,8 +43,59 @@ function getRandomNumber(lower, upper) {
   return Math.floor(Math.random() * (upper - lower + 1)) + lower;
 }
 
-console.log(getRandomNumber("nine", 24));
-console.log(getRandomNumber(1, 100));
-console.log(getRandomNumber(200, "five hundred"));
-console.log(getRandomNumber(1000, 20000));
-console.log(getRandomNumber(50, 100));
+// console.log(getRandomNumber("nine", 24));
+// console.log(getRandomNumber(1, 100));
+// console.log(getRandomNumber(200, "five hundred"));
+// console.log(getRandomNumber(1000, 20000));
+// console.log(getRandomNumber(50, 100));
+
+let phonesInStock = [
+  'iPhone 11', 
+  'Samsung Galaxy S10', 
+  'Google One Plus 6', 
+  'iPhone 12 pro max', 
+  'iPhone 12 mini', 
+  'Samsung Galaxy S21', 
+  'LG Nexus'
+];
+let search;
+let addNewItem;
+let newItem;
+
+while (true) {
+  // import readline module
+  const readline = require("readline");
+  // create interface for input and output
+  const search = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+  // create empty user input
+  let userInput = "";
+  // question user to enter name
+  search.question("What Brand and Model of Phone would you like to buy from us?. Type \"quit\" to quit or \"list\" to list all available devices\n", function (string) {
+    userInput = string;
+
+    console.log(`You've added ${userInput} to your cart`);
+
+    // close input stream
+    search.close();
+    
+  });
+
+  // search = prompt('What Brand and Model of Phone would you like to buy from us?. Type "quit" to quit or "list" to list all available devices');
+  // newItem = prompt(' Which other device would you like to add to your shopping cart? ');
+  addNewItem = phonesInStock.push(newItem);
+  if (search === 'quit'){
+    break;
+  } else if (search === 'list'){
+    console.log(phonesInStock.join(','));
+  } else {
+    if (phonesInStock.indexOf(search) > -1){
+      console.log(`yes we have ${search} in stock`);
+    } else {
+      console.log(`${search} is not in stock`);
+    }
+  }
+}
+console.log('Thank you for shopping from Kingsley\'s store');

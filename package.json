@@ -2,5 +2,23 @@
   "dependencies": {
     "jquery": "^3.6.1",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "js-practice",
+  "description": "my daily javascript practice repository",
+  "version": "1.0.0",
+  "main": "jquery-3.6.1.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsleycj/JS-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingsleycj/JS-practice/issues"
+  },
+  "homepage": "https://github.com/kingsleycj/JS-practice#readme"
 }
