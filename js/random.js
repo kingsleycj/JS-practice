@@ -62,29 +62,29 @@ let search;
 let addNewItem;
 let newItem;
 
-while (true) {
-  // import readline module
-  const readline = require("readline");
-  // create interface for input and output
-  const search = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-  // create empty user input
-  let userInput = "";
-  // question user to enter name
-  search.question("What Brand and Model of Phone would you like to buy from us?. Type \"quit\" to quit or \"list\" to list all available devices\n", function (string) {
-    userInput = string;
+// import readline module
+const readline = require("readline");
+// create interface for input and output
+search = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+// create empty user input
+let userInput = "";
+// question user to enter name
+search.question("What Brand and Model of Phone would you like to buy from us?. Type \"quit\" to quit or \"list\" to list all available devices\n", function (string) {
+  userInput = string;
+  console.log(`You've added ${userInput} to your cart`);
+  // close input stream
+  search.close();
+});
 
-    console.log(`You've added ${userInput} to your cart`);
+while (search>= null) {
 
-    // close input stream
-    search.close();
-    
-  });
 
   // search = prompt('What Brand and Model of Phone would you like to buy from us?. Type "quit" to quit or "list" to list all available devices');
   // newItem = prompt(' Which other device would you like to add to your shopping cart? ');
+  // search = search.toLowerCase();
   addNewItem = phonesInStock.push(newItem);
   if (search === 'quit'){
     break;
