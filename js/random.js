@@ -36,16 +36,44 @@
 // }else{
 //     document.write('you guessed wrong. The number was: ' + randomNumber);
 // }
-function getRandomNumber(lower, upper) {
-  if (isNaN(lower) || isNaN(upper)) {
-    throw new Error("Both arguments must be numbers");
-  }
-  return Math.floor(Math.random() * (upper - lower + 1)) + lower;
-}
+// function getRandomNumber(lower, upper) {
+//   if (isNaN(lower) || isNaN(upper)) {
+//     throw new Error("Both arguments must be numbers");
+//   }
+//   return Math.floor(Math.random() * (upper - lower + 1)) + lower;
+// }
 
 // console.log(getRandomNumber("nine", 24));
 // console.log(getRandomNumber(1, 100));
 // console.log(getRandomNumber(200, "five hundred"));
 // console.log(getRandomNumber(1000, 20000));
 // console.log(getRandomNumber(50, 100));
+//
+// let result = confirm("Are you sure?");
+//
+// if(result === true) {
+//  console.log("You clicked OK button!");
+// } else {
+//   console.log("You clicked Cancel button!");
+// }
+
+const funkylog = ({ delay = 100, randomized }) => {
+  const sleep = (ms) => {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  };
+
+  return async (s) => {
+    for (const c of s) {
+      process.stdout.write(c);
+      await sleep((randomized ? Math.random() : 1) * delay);
+    }
+    process.stdout.write('\n');
+  }
+};
+
+const log = funkylog({ delay: 100, randomized: true });
+
+log('Hello, world!');
+log('What\'s up?');
+log('How are you?');
 

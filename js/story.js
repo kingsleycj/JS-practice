@@ -21,4 +21,4 @@ var story = name + " has a favorite app called " + favApp;
 story += " and his favorite content creator is " + favStory;
 story += " and he spends " + time + " hours on that app";
 
-document.write(story);
+console.log(story);

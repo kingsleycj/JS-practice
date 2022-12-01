@@ -4,11 +4,11 @@ let inStock = ['apples', 'eggs', 'milk', 'cookies', 'cheese', 'bread', 'lettuce'
 let search;
 
 function print(message) {
-    console.log( '<p>' + message + '</p>' );
+    console.log( message );
 }
 
 while (true) {
-    const prompt = require("prompt-sync");
+    // const prompt = require("prompt-sync");
     search = prompt( "Search for a product in our store. Type 'list' to show a list of products available and 'quit' to exit." );
     search = search.toLowerCase();
     if ( search === 'quit') {

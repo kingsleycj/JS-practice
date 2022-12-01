@@ -340,15 +340,47 @@
 // const greeting = greet();
 // console.log(` ${greeting}`);
 
-// const bill = (products, tax) => {
-//     let total = 0;
-//     for (let i = 0; i < products.length; i++) {
-//         total += products[i] + products[i] * tax;
-//     }
-//     return total;
-// };
+const bill = (products, tax) => {
+    let total = 0;
+    for (let i = 0; i < products.length; i++) {
+        total += products[i] + products[i] * tax;
+    }
+    return total;
+};
 
 // console.log(bill([10,15,30], 0.2));
+
+var catalog = [
+  {
+    phoneName: "Tecno Camon 16",
+    price: "100000.00",
+  },
+  {
+    phoneName: "Samsung Galaxy S10",
+    price: "160000.00",
+  },
+  {
+    phoneName: "iPhone 11 ",
+    price: "220000.00",
+  },
+  {
+    phoneName: "Xiaomi Redmi Note 9",
+    price: "120000.00",
+  }
+];
+
+const print = (message) => {
+  console.log(message);
+}
+  let sumPrices = 0;
+
+const loop = () => {
+  for (let i = 0; i <catalog.length;i++){
+    sumPrices += catalog[price][i]
+  } return sumPrices;
+
+}
+print(`sum of prices are ${sumPrices}`);
 
 //
 // var message = 'hello!';
@@ -399,7 +431,7 @@
 // };
 
 // nth_most_rate([1, 2, 3, 4, 5], 3);
-
+/*
 const nth_most_rate = (list, n) => {
   const nth_Checker = {};
   list.forEach((number, index) => {
@@ -439,6 +471,7 @@ const nth_most_rate = (list, n) => {
 };
 
 console.log(nth_most_rate([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], 3));
+*/
 
 // function nth_most_rate(list, n) {
 //   var mf = 1;
