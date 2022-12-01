@@ -10,15 +10,15 @@ let catalog = [
 */
 
 var catalog = [
-    "iPhone 11",
-    "Samsung Galaxy S10",
-    "Google One Plus 6",
-    "iPhone 12 pro max",
-    "iPhone 12 mini",
-    "Samsung Galaxy S21",
-    "LG Nexus",
-    "Google One Plus 5",
-    "Xiaomi Redmi Note 6",
+   [ "iPhone 11", 22],
+   [ "Samsung Galaxy S10", 230],
+    ["Google One Plus 6", 230],
+    ["iPhone 12 pro max", 230],
+   [ "iPhone 12 mini", 230],
+   [ "Samsung Galaxy S21", 230],
+   [ "LG Nexus", 230],
+    ["Google One Plus 5", 230],
+    ["Xiaomi Redmi Note 6", 230],
 ];
 
 function print(message) {
