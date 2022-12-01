@@ -10,3 +10,4 @@ function printList( list ) {
 function print(html) {
     document.write(html);
 }
+

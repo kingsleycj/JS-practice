@@ -4,7 +4,12 @@
 // playList.push('Respect', 'Imagine');
 // playList.unshift('Born to Run');
 // playList.unshift('Louie Louie', 'Maybellene');
-// printList(playList);
+
+// function print(message) {
+//   console.log(message);
+// }
+
+// print(playList);
 
 // removing items from an array
 /*
@@ -16,7 +21,7 @@ console.log('first Item is ' + firstItem);
 console.log('last item is ' + lastItem);
 */
 
-// Using loops for arrays 
+// Using loops for arrays
 
 /*
 var playList = [
@@ -71,29 +76,54 @@ console.log(position);
 
 //  using 2-D array to build a music playlist displaying both song and artist
 
-/*
-var playList = [
- ['I Did It My Way', ' Frank Sinatra'],
- ['Respect', ' Aretha Frankllin'],
- ['Imagine', ' John Lennon'],
- ['Born to Run', ' Bruce Springsteen'],
- ['Louie Louie', ' The Kingsmen'],
- ['Maybellene', ' Chuck Berry']
+var catalog = [
+  ["iPhone 11", 320],
+  ["Samsung Galaxy s10", 250],
+  ["redmi note 9", 200],
+  ["tecno camon 16", 160],
+  ["infinix note 10", 90],
+  ["LG nexus", 220],
 ];
 
 function print(message) {
-  document.write(message);
+  console.log(message);
 }
 
-function printSongs(songs) {
-  var listHTML = "<ol>";
-  for (var i = 0; i < songs.length; i++) {
-    listHTML += "<li>" + songs[i][0] + ' by ' + songs[i][1] + "</li>";
+function printList(items) {
+  var list = "\n[\n";
+  for (var i = 0; i < items.length; i++) {
+    list += "\n[" + items[i][0] + " costs " + "$" + items[i][1] + "]\n";
   }
-  listHTML += "</ol>";
-  print(listHTML);
+  list += "\n]\n";
+  print(list);
 }
-printSongs(playList);
-*/
 
-
+var cart = [];
+var r1 = require("readline");
+var prompts = r1.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+prompts.question("Enter your name: ", function (username) {
+  print(`Hey ${username}, welcome to Kingsley\'s store`);
+  print(`\nHere are the list and prices of our Phone Catalog: `);
+  printList(catalog);
+  prompts.question(
+    "\nSelect the device you'd like to add to your shopping cart:  ",
+    function (selectedItem) {
+      function printSelected(items) {
+        for (var i = 0; i < items.length; i++) {
+          if (catalog.indexOf(selectedItem[i]) > -1) {
+            print(`${selectedItem} has been added to the shopping cart\n`);
+            cart = cart.push(selectedItem);
+            print("Your shopping cart : \n ");
+            print(cart);
+          } else {
+            print(selectedItem + " is not in stock");
+          }
+        }
+      }
+      printSelected(cart)
+    }
+  );
+});

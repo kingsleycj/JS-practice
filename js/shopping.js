@@ -50,7 +50,7 @@ do {
 }while( total !== null){
     for (let i = 0; i < catalog.length; i++){
         addPrices1 = parseInt.catalog[i][1];
-        next = 
+        
     }
 }
 
