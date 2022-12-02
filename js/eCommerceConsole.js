@@ -33,14 +33,26 @@ prompts.question("Enter your name: ", function (username) {
     prompts.question(
         "\nSelect the device you'd like to add to your shopping cart:  ",
         function (selectedItem) {
-            if (Array.prototype.values(catalog.indexOf(selectedItem) > -1)) {
+            if (catalog[0].includes(selectedItem) ) {
                 print(`${selectedItem} has been added to the shopping cart\n`);
                 cart.push(selectedItem);
-                print("Your shopping cart : \n ");
-                print(cart);
+                print("Your shopping cart : \n " + cart);
             } else {
                 print(selectedItem + " is not in stock");
             }
+            prompts.question("\nWould you like to add more to your shopping cart? ", function (moreItems) {
+                if (catalog[0].includes(moreItems) ) {
+                    print(`${moreItems} has been added to the shopping cart\n`);
+                    cart.push(moreItems);
+                    print("Your shopping cart : \n ");
+                    print(cart);
+                 }  // else if (moreItems === null) {
+                //     // cart.pop(moreItems);
+                //     // print(cart);
+                //     print("Thank You for shopping from our store")
+                // }
+            })
         }
     );
 });
+
