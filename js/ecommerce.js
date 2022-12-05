@@ -1,64 +1,66 @@
-// Product Catalog
-let phonesInStock = [
-    "iPhone 11",
-    "Samsung Galaxy S10",
-    "Google One Plus 6",
-    "iPhone 12 pro max",
-    "iPhone 12 mini",
-    "Samsung Galaxy S21",
-    "LG Nexus",
-    "Google One Plus 5",
-    "Xaiomi Redmi Note 6",
+const catalog = [
+  ["iPhone 11", 320],
+  ["Samsung Galaxy s10", 250],
+  ["Xiaomi Redmi note 9", 200],
+  ["Tecno Camon 16", 160],
+  ["Infinix Note 10", 90],
+  ["LG nexus", 220],
 ];
 
-// Variable Declarations
-let search;
-let addNewItem;
-let newItem;
-
-// A print function: to easily console.log outputs
-function print(message) {
+const print = (message) => {
   console.log(message);
-}
+};
 
+const printList = (items) => {
+  let list = "\n***************************************\n";
+  for (let i = 0; i < items.length; i++) {
+    list += "\n[" + items[i][0] + " costs " + "$" + items[i][1] + "]\n";
+  }
+  list += "\n***************************************\n";
+  print(list);
+};
 
-  // import readline module
-const readline = require("readline");
-  // create interface for input and output
-search = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
+let r1 = require("readline");
+let prompts = r1.createInterface(process.stdin, process.stdout);
+prompts.question("Enter your Name: ", function (username) {
+    print(`Hi ${username}, Welcome to Kingsley\'s store`);
+    print(`\nHere are the list and prices of our Phone Catalog: `);
+    printList(catalog);
+  prompts.question(
+    "\nSelect the device you'd like to add to your shopping cart:  ",
+    function (selectedItem) {
+      prompts.question("Enter your Email Address: ", function (email) {
+        prompts.question("Enter your Contact Address: ", function (address) {
+          prompts.question(
+            "Enter your Phone Number\n(make sure its 11 digits): ",
+            function (mobile) {
+              let message = "";
+              if (mobile.length >= 10) {
+                message =
+                  "\n\n Thank You! " +
+                  username +
+                  "\n\n Your details have been stored,  You can make your payment and expect delivery in 2 day(s)" +
+                  "\n\n-------------------------------------------------" +
+                  "\n\n Username              : " +
+                  username +
+                  "\n\n Email                 : " +
+                  email +
+                  "\n\n Contact Address       : " +
+                  address +
+                  "\n\n Phone Number          : " +
+                  mobile +
+                  "\n\n-------------------------------------------------";
+              } else {
+                message =
+                  "Your Phone number is " +
+                  mobile +
+                  " , and its not up to 11 digits, please restart and input 11  digits of your phone number ";
+              }
+              console.log(message);
+            }
+          );
+        });
+      });
+    }
+  );
 });
-  // create empty user input
-let userInput = "";
-  // question user to enter name
-search.question(
-    'What Brand and Model of Phone would you like to buy from us?. Type "quit" to quit or "list" to list all available devices\n',
-    function (string) {
-        userInput = string;
-        console.log(`You've added ${userInput} to your cart`);
-      // close input stream
-        search.close();
-    }
-);
-  // search = prompt('What Brand and Model of Phone would you like to buy from us?. Type "quit" to quit or "list" to list all available devices');
-  // newItem = prompt(' Which other device would you like to add to your shopping cart? ');
-  // search = search.toLowerCase();
-
-addNewItem = phonesInStock.push(userInput);
-if (userInput === "list") {
-    // Listing Product Catalog
-    print(phonesInStock.join(","));
-} else {
-    if (phonesInStock.indexOf(userInput) > -1) {
-    print(`yes we have ${userInput} in stock`);
-    } else {
-    print(`${userInput} is not in stock`);
-    }
-}
-print(`All Items in your cart: `);
-print(addNewItem);
-
-print("Thank you for shopping from Kingsley's store");
-
-
