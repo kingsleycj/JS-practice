@@ -84,7 +84,6 @@ for (var i = 0; i < questions.length; i++) {
     if (response === answer) {
         correctAnswers += 1;
         questionsCorrect.push(question);
-
     }else {
         questionsWrong.push(question);
     }
