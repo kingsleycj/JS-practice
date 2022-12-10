@@ -261,8 +261,8 @@ addItemButton.addEventListener('click', () => {
 
 
 // REMOVING REMOVE BUTTON HANDLER BECAUSE THE CODE HAS BEEN MODIFIED
-// removeItemButton.addEventListener('click', () => {
-//         let ul = document.getElementsByTagName("ul")[0];
-//         let li = document.querySelector("li:last-child");
-//         ul.removeChild(li);
-// });
+removeItemButton.addEventListener('click', () => {
+        let ul = document.getElementsByTagName("ul")[0];
+        let li = document.querySelector("li:last-child");
+        ul.removeChild(li);
+});
