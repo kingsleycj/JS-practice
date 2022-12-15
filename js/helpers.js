@@ -38,17 +38,26 @@ console.log(myRectangle2.getArea());
 
 */
 
-class square {
-    constructor(_width) {
-        this.width = _width;
-        this.height = _width;
+// class square {
+//     constructor(_width) {
+//         this.width = _width;
+//         this.height = _width;
+//     }
+//     get area(){
+//         return this.width * this.height;
+//     }
+// }
+
+// let square1 = new square(25);
+// console.log(square1.area)
+
+
+
+
+var dice = {
+    sides: 6,
+    roll: function () {
+        var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+        return randomNumber;   
     }
-    get area(){
-        return this.width * this.height;
-    }
-}
-
-let square1 = new square(25);
-console.log(square1.area)
-
-
+};
