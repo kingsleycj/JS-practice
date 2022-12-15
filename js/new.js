@@ -22,14 +22,28 @@
 //     })
 // });
 
+
+/**
+ *  !  remember to dot ur i's and cross ur t's
+ *  ? Are you sure you want to continue with this project
+ *  TODO  GET THAT CLASSES OVER WITH
+ * @param  myParameter for this project 
+ */
+
 // defining an empty class
 class Human {
     numberOfEyes = 2
-    hair = 'black'
+    hairColor = 'black'
     static numberOfLegs = 2
+    cry () {
+        console.log("I am crying!")
+    }
 }
-
-Human.numberOfLegs = 12
 // instantiating an object
 const human = new Human()
+
+human.hairColor = "pink";
+Human.numberOfLegs = 11;
+
 console.log(human, Human);
+// adding methods to classes
