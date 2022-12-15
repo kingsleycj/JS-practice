@@ -24,8 +24,12 @@
 
 // defining an empty class
 class Human {
-
+    numberOfEyes = 2
+    hair = 'black'
+    static numberOfLegs = 2
 }
 
+Human.numberOfLegs = 12
 // instantiating an object
 const human = new Human()
+console.log(human, Human);
