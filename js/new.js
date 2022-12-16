@@ -35,8 +35,14 @@ class Human {
     numberOfEyes = 2
     hairColor = 'black'
     static numberOfLegs = 2
-    cry () {
+    cry() {
         console.log("I am crying!")
+    }
+    displaySelf() {
+        console.log(this, Human.numberOfLegs)
+    }
+    static accessStatic(){
+        console.log(Human.numberOfLegs);
     }
 }
 // instantiating an object
@@ -45,5 +51,9 @@ const human = new Human()
 human.hairColor = "pink";
 Human.numberOfLegs = 11;
 
-console.log(human, Human);
+// console.log(human, Human);
 // adding methods to classes
+
+human.displaySelf()
+// human.accessStatic();
+Human.accessStatic()
