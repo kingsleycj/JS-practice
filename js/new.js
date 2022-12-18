@@ -58,20 +58,85 @@
 // // human.accessStatic();
 // Human.accessStatic()
 
-class Mammal {
-    numberOfEyes = 2
 
-    eat () {
-        console.log('I am eating!')
+// INHERITANCE
+// class Mammal {
+//     numberOfEyes = 2
+
+//     eat () {
+//         console.log('I am eating!')
+//     }
+// }
+
+// const mammal = new Mammal()
+// // mammal.eat()
+
+// class Human extends Mammal {
+//     numberOfLegs = 2
+// }
+
+// const human = new Human()
+// // human.eat()
+
+// class Bird extends  Mammal{
+//     hasFeather = true
+// }
+// const dove = new Bird()
+// console.log(dove.hasFeather)
+
+class Mammal {
+    constructor(){
+        if (this.constructor === Mammal){
+            throw new Error ('Mammal cannot be called or instantiated')
+        }
     }
 }
 
-const mammal = new Mammal()
-mammal.eat()
-
 class Human extends Mammal {
-    numberOfLegs = 2
+    run (){
+        console.log('This can run')
+    }
 }
 
-const human = new Human()
-human.eat()
+const human = new Human();
+
+human.run()
+
+// POLYMORPHISM
+class Shape {
+    constructor(){
+        if (this.constructor === Shape){
+            throw new error ('please implement this instead')
+        }
+    }
+    area(){
+        throw new error('This cannot be implemented');
+    }
+}
+
+class Circle extends Shape {
+    constructor(radius){
+        super()
+        this.radius = radius
+    }
+    area() {
+        const area = Math.PI * (this.radius **2)
+        return area
+    }
+}
+
+const circle = new Circle(9)
+// console.log(circle.area()) 
+
+class Square extends Shape{
+    constructor(length){
+        super()
+        this.length = length
+    }
+    area(){
+        return this.length * this.length
+    }
+}
+
+const square = new Square(4)
+console.log(square.area())
