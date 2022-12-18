@@ -139,4 +139,29 @@ class Square extends Shape{
 }
 
 const square = new Square(4)
-console.log(square.area())
+// console.log(square.area())
+
+// ENCAPSULATION
+class Customer {
+    #create (){
+        console.log('I am creating myself')
+    }
+    createSelf(){
+        this.#create()
+    }
+}
+
+const ezeh = new Customer()
+// ezeh.createSelf()
+
+
+
+class withBackbone {
+    warmBlooded = true
+
+}
+
+
+class withoutBackbone {
+
+}
