@@ -36,3 +36,4 @@ if (correct === 5) {
     "<strong> You earned no crown. You need to study harder </strong>"
   );
 }
+
