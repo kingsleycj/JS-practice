@@ -161,7 +161,6 @@ const aves = new Aves("Aves");
 const mammal = new Mammal("Mammal");
 
 // Calling Methods to set and show all animals with their class and class attributes
-
 arthropoda.setAnimal("oButterfly");
 console.log(arthropoda.getAnimal());
 arthropoda.getDetails();
