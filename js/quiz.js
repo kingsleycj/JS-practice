@@ -12,9 +12,9 @@ var html;
 var questionsCorrect = [];
 var questionsWrong = [];
 
-// function print(message) {
-//     document.write(message);
-// }
+function print(message) {
+    document.write(message);
+}
 
 function buildList(array) {
     var listHTML = '<ol>';
@@ -48,7 +48,6 @@ print(html);
 */
 
 // making an array of objects
-
 var questions = [
   { question: "How many states are in the United States?", answer: 50 },
   { question: "How many continents are there?", answer: 7 },
@@ -75,7 +74,6 @@ function buildList(array) {
   listHTML += "</ol>";
   return listHTML;
 }
-
 for (var i = 0; i < questions.length; i++) {
     question = questions[i].question;
     answer = questions[i].answer;
@@ -88,8 +86,6 @@ for (var i = 0; i < questions.length; i++) {
         questionsWrong.push(question);
     }
 }
-
-
 html = "You got " + correctAnswers + " question(s) right";
 html += "<h2> You got these questions correct: </h2>";
 html += buildList(questionsCorrect);
