@@ -1,5 +1,5 @@
-// // object literals are assigned with {}
-/*
+// object literals are assigned with {}
+
 var person = {
     name : 'John',
     country : 'United States',
@@ -15,7 +15,7 @@ console.log(person.country);
 console.log(person.skills);
 
 
-// // object properties
+// object properties
 
 function print(message) {
     var div = document.getElementById('output');
@@ -31,8 +31,6 @@ message += '<p> My age is now ' + person.age + '</p>';
 message += '<p> I have ' + person.skills.length + ' skills: ';
 message += person.skills.join(', ') + '</p>';
 print(message);
-
-*/
 
 
 // TxE Backend Assignment 1
