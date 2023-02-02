@@ -1,86 +1,86 @@
-// let email = 'primekings.kc@gmail.com';
-// console.log(email);
+let email = 'primekings.kc@gmail.com';
+console.log(email);
 
-// //string concatenation
-// let firstName = 'Brandon';
-// let lastName = 'Anderson';
+// string concatenation
+let firstName = 'Brandon';
+let lastName = 'Anderson';
 
-// let fullName = firstName + ' ' + lastName;
-// console.log(fullName);
+let fullName = firstName + ' ' + lastName;
+console.log(fullName);
 
-// //getting characters
-// console.log(fullName[2]);
+// getting characters
+console.log(fullName[2]);
 
-// //string length
-// console.log(fullName.length);
+// string length
+console.log(fullName.length);
 
-// //string methods
-// console.log(fullName.toUpperCase());
-// let result = fullName.toLowerCase();
-// console.log(result, fullName);
-// let index = email.indexOf('@');
-// console.log(index)
+// string methods
+console.log(fullName.toUpperCase());
+let result = fullName.toLowerCase();
+console.log(result, fullName);
+let index = email.indexOf('@');
+console.log(index)
 
 //common string methods
+let email = 'kingsley@gmail.com';
 
-// let email = 'kingsley@gmail.com';
+let result = email.lastIndexOf('s');
 
-// // let result = email.lastIndexOf('s');
+let result = email.slice(4,15);
 
-// // let result = email.slice(4,15);
+let result = email.substr(4,15);
 
-// // let result = email.substr(4,15);
+let result = email.replace('n', 'm');
+console.log(result);
 
-// let result = email.replace('n', 'm');
-// console.log(result);
+let radius = 10;
+const pi = 3.14;
 
-// let radius = 10;
-// const pi = 3.14;
+console.log(radius, pi);
 
-// console.log(radius, pi);
+
 // math operators +, -, *, /, **, %
 
-// console.log(10/2);
-// let result = radius % 3;
-// let result = pi * radius **2;
+console.log(10/2);
+let result = radius % 3;
+let result = pi * radius **2;
+
 // order of operation - B I D M A S
-// let result = 5 * (10*3) **2;
-// console.log(result);
+let result = 5 * (10*3) **2;
+console.log(result);
 
-// let likes = 10;
-// likes = likes + 1;
-// likes++;
-// likes--;
+let likes = 10;
+likes = likes + 1;
+likes++;
+likes--;
 
-// likes += 10;
-// likes -= 5;
-// likes *=2;
-// likes/= 2;
-// console.log(likes);
+likes += 10;
+likes -= 5;
+likes *=2;
+likes/= 2;
+console.log(likes);
 
 //NaN - Not a Number
+console.log(5 / 'hello');
+console.log(5 * 'hello');
 
-// console.log(5 / 'hello');
-// console.log(5 * 'hello');
+//Number concatenation
+let result = 'the blog has' +' '+ likes + 'likes';
+console.log(result);
 
-// //Number concatenation
-// let result = 'the blog has' +' '+ likes + 'likes';
+//template strings
+const title = 'Best reads of 2019';
+const author = 'Mario';
+const likes = 30;
 
-// console.log(result);
+// concatenation way
+let result = 'The blog called' + title + 'by' + author + 'has' + likes + 'likes;'
+console.log(result);
 
-// //template strings
-// const title = 'Best reads of 2019';
-// const author = 'Mario';
-// const likes = 30;
-
-// // concatenation way
-// // let result = 'The blog called' + title + 'by' + author + 'has' + likes + 'likes;'
-// // console.log(result);
-
-// // template string way
-// let result = `the blog called ${title} by ${author} has ${likes} likes`;
-// console.log(result);
-// // creating html templates
+// template string way
+let result = `the blog called ${title} by ${author} has ${likes} likes`;
+console.log(result);
+// creating html templates
 
 // let html = `
 //     <h2>${title}</h2>
@@ -127,30 +127,30 @@
 
 //comparison operators
 
-// let age = 25;
+let age = 25;
 
-// console.log(age == 25);
-// console.log(age == '25');
-// console.log(age != 25);
-// console.log(age != '25');
+console.log(age == 25);
+console.log(age == '25');
+console.log(age != 25);
+console.log(age != '25');
 
-// console.log(age == 30);
-// console.log(age != 30);
-// console.log(age > 20);
-// console.log(age < 20);
-// console.log(age <= 25);
-// console.log(age >= 25);
+console.log(age == 30);
+console.log(age != 30);
+console.log(age > 20);
+console.log(age < 20);
+console.log(age <= 25);
+console.log(age >= 25);
 
-// let name = 'shaun';
+let name = 'shaun';
 
-// console.log(name == 'Shaun');
-// console.log(name > 'Crystal');
-// console.log(name > 'Shaun');
+console.log(name == 'Shaun');
+console.log(name > 'Crystal');
+console.log(name > 'Shaun');
 
-// console.log(age === 25);
-// console.log(age === '25');
-// console.log(age !== 25);
-// console.log(age !== '25');
+console.log(age === 25);
+console.log(age === '25');
+console.log(age !== 25);
+console.log(age !== '25');
 
 //type conversion
 
@@ -169,75 +169,75 @@
 
 // for loop:
 
-// for(let i = 0; i < 5; i++){
-//     console.log('in loop:', i);
-// }
-// console.log('loop finished');
+for(let i = 0; i < 5; i++){
+    console.log('in loop:', i);
+}
+console.log('loop finished');
 
-// const names = ['shaun', 'mario', 'luigi'];
-// for(let i = 0; i < names.length; i++) {
-//     // console.log(i);
-//     // console.log(names[i]);
-//     let html = `<div>${names[i]}</div>`;
-//     console.log(html);
-// }
+const names = ['shaun', 'mario', 'luigi'];
+for(let i = 0; i < names.length; i++) {
+    // console.log(i);
+    // console.log(names[i]);
+    let html = `<div>${names[i]}</div>`;
+    console.log(html);
+}
 
 //while loops
-// const names = ['shaun', 'mario', 'luigi'];
-// // let i = 0;
+const names = ['shaun', 'mario', 'luigi'];
+let i = 0;
 
-// // while(i < 5){
-// //     console.log('in loop:',i);
-// //     i++;
-// // }
+while(i < 5){
+    console.log('in loop:',i);
+    i++;
+}
 
-// let i = 0;
-// while (i < names.length) {
-//     console.log(names[i]);
-//     i++;
-// }
+let i = 0;
+while (i < names.length) {
+    console.log(names[i]);
+    i++;
+}
 
 //do while
-// let i = 3;
-// do {
-//     console.log('value of i is: ',i);
-//     i++;
-// } while(i < 5);
+let i = 3;
+do {
+    console.log('value of i is: ',i);
+    i++;
+} while(i < 5);
 
 // if statement
-// const age = 20;
+const age = 20;
 
-// if(age > 20){
-//     console.log('you are over 20 years old');
+if(age > 20){
+    console.log('you are over 20 years old');
 
-// }
-// const ninjas = ['shaun', 'ryu', 'chun-li','yoshi'];
-// if(ninjas.length > 3){
-//     console.log("that's a lot of ninjas");
-// }
+}
+const ninjas = ['shaun', 'ryu', 'chun-li','yoshi'];
+if(ninjas.length > 3){
+    console.log("that's a lot of ninjas");
+}
 
 // logical operators -OR || and AND &&
 
-// const password = 'pas@11';
+const password = 'pas@11';
 
-// if (password.length >= 12 && password.includes('@')){
-//     console.log("password is very strong");
-// } else if (password.length >= 8 || password.includes('@') && password.length >= 5){
-//     console.log('password is long enough');
-// } else {
-//     console.log('password is too short');
-// }
+if (password.length >= 12 && password.includes('@')){
+    console.log("password is very strong");
+} else if (password.length >= 8 || password.includes('@') && password.length >= 5){
+    console.log('password is long enough');
+} else {
+    console.log('password is too short');
+}
 
 // logical NOT (!)
 
-// let user = false;
+let user = false;
 
-// if(!user){
-//     console.log("user must be logged in to continue");
-// }
+if(!user){
+    console.log("user must be logged in to continue");
+}
 
-// console.log(!true);
-// console.log(!false);
+console.log(!true);
+console.log(!false);
 
 // //break and continue
 // const scores = [50, 25, 0, 30, 100, 20, 10];
@@ -431,7 +431,8 @@ print(`sum of prices are ${sumPrices}`);
 // };
 
 // nth_most_rate([1, 2, 3, 4, 5], 3);
-/*
+
+
 const nth_most_rate = (list, n) => {
   const nth_Checker = {};
   list.forEach((number, index) => {
@@ -471,7 +472,7 @@ const nth_most_rate = (list, n) => {
 };
 
 console.log(nth_most_rate([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], 3));
-*/
+
 
 // function nth_most_rate(list, n) {
 //   var mf = 1;
